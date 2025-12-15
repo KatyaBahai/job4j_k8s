@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: calculator
+data:
+  database_url: {{ .Values.config.database_url | quote }}
+  kafka_bootstrap_servers: {{ .Values.config.kafka_bootstrap_servers | quote }}

@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: calculator
-data:
-  database_url: jdbc:postgresql://host.docker.internal:5432/job4j_devops
-  kafka_bootstrap_servers: host.docker.internal:9092

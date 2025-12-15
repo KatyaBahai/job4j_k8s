@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: calculator
-          image: katyabahai/job4j_devops:v.1.0.2
+          image: {{ .Values.containers.image | quote }}
           ports:
             - containerPort: 8080
           env:
